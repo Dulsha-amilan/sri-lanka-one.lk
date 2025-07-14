@@ -1,0 +1,206 @@
+.post-ad-page {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.steps-container {
+  margin-bottom: 2rem;
+}
+
+.post-ad-steps {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-container {
+  margin-bottom: 2rem;
+}
+
+.step-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.step-card h3 {
+  color: var(--text-dark);
+  margin: 0 0 1.5rem 0;
+  font-size: 1.3rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.form-group .p-inputtext,
+.form-group .p-dropdown,
+.form-group .p-inputnumber,
+.form-group .p-inputtextarea {
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.next-btn,
+.publish-btn {
+  background: var(--primary-color);
+  border: none;
+  color: var(--text-dark);
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.preview-content {
+  padding: 1rem 0;
+}
+
+.preview-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.preview-section:last-child {
+  border-bottom: none;
+}
+
+.preview-section h4 {
+  color: var(--text-dark);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+.preview-section h5 {
+  color: var(--text-dark);
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+}
+
+.preview-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0 0 1rem 0;
+}
+
+.preview-description {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.preview-details,
+.preview-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.preview-details span,
+.preview-contact span {
+  color: var(--text-light);
+}
+
+.terms-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.terms-section label {
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+/* Steps customization */
+.p-steps .p-steps-item.p-highlight .p-steps-number {
+  background: var(--primary-color);
+  color: var(--text-dark);
+}
+
+.p-steps .p-steps-item.p-highlight .p-steps-title {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* FileUpload customization */
+.p-fileupload .p-fileupload-buttonbar {
+  background: var(--background-light);
+  border: 1px solid var(--border-color);
+}
+
+.p-fileupload .p-fileupload-buttonbar .p-button {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-dark);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .post-ad-page {
+    padding: 1rem;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .next-btn,
+  .publish-btn {
+    margin-left: 0;
+  }
+  
+  .preview-details,
+  .preview-contact {
+    gap: 0.25rem;
+  }
+  
+  .steps-container {
+    overflow-x: auto;
+  }
+}

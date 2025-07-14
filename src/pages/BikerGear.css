@@ -1,0 +1,250 @@
+.biker-gear-page {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.biker-gear-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.filters-sidebar {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.filters-panel {
+  padding: 1.5rem;
+}
+
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.filters-header h3 {
+  margin: 0;
+  color: var(--text-dark);
+}
+
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.apply-filters-btn {
+  width: 100%;
+  background: var(--primary-color);
+  border: none;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.gear-main {
+  min-height: 500px;
+}
+
+.results-header {
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.gear-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.biker-gear-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.biker-gear-card:hover {
+  transform: translateY(-4px);
+}
+
+.gear-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.gear-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gear-condition {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary-color);
+  color: var(--text-dark);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.verified-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #28a745;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.gear-content {
+  padding: 1.5rem;
+}
+
+.gear-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.gear-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.gear-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.gear-size {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.gear-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #ffc107;
+}
+
+.gear-seller {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.gear-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.gear-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.gear-actions .p-button {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-light);
+}
+
+.no-results i {
+  margin-bottom: 1rem;
+  color: var(--border-color);
+}
+
+.no-results h3 {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.gear-paginator {
+  margin-top: 2rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .biker-gear-page {
+    padding: 1rem;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .biker-gear-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .gear-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .gear-actions {
+    flex-direction: column;
+  }
+  
+  .filters-sidebar-mobile {
+    width: 300px;
+  }
+}

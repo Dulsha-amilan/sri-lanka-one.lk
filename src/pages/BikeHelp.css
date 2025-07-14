@@ -1,0 +1,142 @@
+.bike-help-page {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.search-section {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.help-search {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.search-results {
+  margin-top: 2rem;
+}
+
+.search-results h2 {
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.help-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.help-item-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.help-item-header h3 {
+  color: var(--text-dark);
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.help-item-summary {
+  color: var(--text-light);
+  margin: 0.5rem 0 1rem 0;
+  line-height: 1.6;
+}
+
+.help-item-details {
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.help-item-details p {
+  margin-bottom: 0.5rem;
+}
+
+.help-feedback {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-light);
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-light);
+}
+
+.no-results i {
+  margin-bottom: 1rem;
+  color: var(--border-color);
+}
+
+/* Tab customization */
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background: transparent;
+  border: none;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  background: var(--primary-color);
+  color: var(--text-dark);
+}
+
+.p-tabview .p-tabview-panels {
+  background: transparent;
+  border: none;
+  padding: 2rem 0;
+}
+
+/* Accordion customization */
+.p-accordion .p-accordion-tab .p-accordion-header .p-accordion-header-link {
+  background: var(--background-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.p-accordion .p-accordion-tab .p-accordion-header.p-highlight .p-accordion-header-link {
+  background: var(--primary-color);
+  color: var(--text-dark);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .bike-help-page {
+    padding: 1rem;
+  }
+  
+  .help-feedback {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .p-tabview .p-tabview-nav {
+    flex-wrap: wrap;
+  }
+  
+  .p-tabview .p-tabview-nav li {
+    flex: 1;
+    min-width: 120px;
+  }
+}
